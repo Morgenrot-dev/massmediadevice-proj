@@ -31,7 +31,7 @@ This project implements a SPI SD card driver from scratch implementing setup com
 | | |
 |---|---|
 | MCU | ATmega32U4 |
-| Board profile | USBKEY (LUFA `BOARD`) |
+| Board profile | MICRO (LUFA `BOARD`) |
 | Clock | 16 MHz |
 | SD interface | SPI |
 | Display | I²C OLED (u8g2-compatible) |
@@ -39,6 +39,8 @@ This project implements a SPI SD card driver from scratch implementing setup com
 The SD card is wired to the hardware SPI pins with a dedicated chip-select line.
 See `SD_SPINotes.txt` for notes on the SPI-mode entry sequence and SCSI read/write
 flow.
+
+There is also a PCB project which is linked to this firmware project aswell. It only adds a couple of buttons and LEDS to indicate the status of the board and for user input. 
 
 ## Architecture
 
