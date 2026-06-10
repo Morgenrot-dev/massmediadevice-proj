@@ -1,6 +1,6 @@
 [
   {
-    "file": "main.c",
+    "file": "PetitFs/source/diskio.c",
     "arguments": [
       "/usr/bin/avr-gcc",
       "-c",
@@ -25,23 +25,26 @@
       "-Os",
       "-std=gnu99",
       "-Wstrict-prototypes",
-      "-DF_CPU=8000000UL",
+      "-DF_CPU=16000000UL",
       "-DUSE_LUFA_CONFIG_HEADER",
       "-IConfig/",
+      "-IPetitFs/source/",
+      "-Iu8g2/csrc/",
+      "-Iu8g2/sys/avr/avr-libc/lib/",
       "-I.",
       "-I./lufa/LUFA/..",
       "-DARCH=ARCH_AVR8",
       "-DBOARD=BOARD_USBKEY",
-      "-DF_USB=8000000UL",
+      "-DF_USB=16000000UL",
       "-MMD",
       "-MP",
       "-MF",
-      "obj/main.d",
-      "main.c",
+      "obj/diskio.d",
+      "PetitFs/source/diskio.c",
       "-o",
-      "obj/main.o"
+      "obj/diskio.o"
     ],
     "directory": "/home/shottyman/git/resume-product",
-    "output": "obj/main.o"
+    "output": "obj/diskio.o"
   }
 ]
